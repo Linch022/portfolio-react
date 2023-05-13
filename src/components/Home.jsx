@@ -2,13 +2,16 @@ import React, { useEffect, useState } from 'react';
 import playLogo from '../assets/playlogo.png';
 import { useLocationContext } from '../contexts/Location';
 import { useDestinationContext } from '../contexts/Destination';
+import useMediaQueries from 'media-queries-in-react';
 
 const Home = () => {
   const { location } = useLocationContext();
   const { destination } = useDestinationContext();
   const [className, setClassName] = useState();
   const [showContent, setShowContent] = useState(false);
-
+  const mediaQueries = useMediaQueries({
+    screen: 'screen and (min-width: 750px)',
+  });
   useEffect(() => {
     setShowContent(false);
     const timer = setTimeout(() => {
@@ -34,8 +37,16 @@ const Home = () => {
   return (
     <div className='home-container'>
       <div className={`${className}-auto-text-container`}>
-        <h1 id='title-auto-text'>Je suis Nicolas Berthollet</h1>
-        <span id='auto-text'></span>
+        {mediaQueries.screen ? (
+          <>
+            <h1 id='title-auto-text'>Je suis Nicolas Berthollet</h1>
+            <span id='auto-text'></span>
+          </>
+        ) : (
+          <>
+            <h1 id='title-homepage-responsive'>Je suis Nicolas Berthollet</h1>
+          </>
+        )}
       </div>
       {showContent ? (
         <>

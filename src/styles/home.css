@@ -39,6 +39,20 @@
   white-space: pre-wrap;
 }
 
+#title-homepage-responsive {
+  font-size: 2.5rem;
+}
+#title-homepage-responsive:after {
+  position: absolute;
+  content: 'développeur web Javascript react';
+  height: 100%;
+  line-height: 40px;
+  left: 50%;
+  top: 90%;
+  transform: translateX(-50%);
+  white-space: pre-wrap;
+}
+
 .homepage-content {
   width: 100%;
   height: 70vh;
@@ -166,10 +180,17 @@
   .display-middle-home-project-container {
     margin: 50px;
   }
+  .incoming-left-home-project-container {
+    height: auto;
+  }
+  .incoming-left-presentation-container {
+    height: auto;
+  }
 }
 @media screen and (max-width: 900px) {
   #title-auto-text,
-  .homepage-content h3 {
+  .homepage-content h3,
+  #title-homepage-responsive {
     font-size: clamp(1rem, 4vw, 2rem);
   }
   p {
