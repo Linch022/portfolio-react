@@ -74,8 +74,9 @@ const Home = () => {
                 <h3>mon dernier projet</h3>
                 <div className='projet-link-container'>
                   <a
-                    href='https://prof-linch-pokedex.netlify.app/'
+                    href='https://travelers-gig.netlify.app/'
                     className='projet-link'
+                    target='blank'
                   >
                     <img
                       src={playLogo}
@@ -84,12 +85,11 @@ const Home = () => {
                     />
                   </a>
                 </div>
-                <h3>pokedex</h3>
+                <h3>TRAVELERS-GIG</h3>
                 <p className='text'>
-                  <span className='underline'> projet personnel : </span> <br />
-                  création d'un pokedex avec une apirest / react / css <br />
-                  objectifs : afficher les pokémons, les filtrer, les ajouter
-                  aux favoris
+                  <span className='underline'> Projet Hackaton : </span> <br />
+                  Création d'un site qui répertorie les concerts dans le monde
+                  grâce à une recherche par Artiste
                 </p>
               </div>
             </div>

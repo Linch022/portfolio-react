@@ -133,79 +133,101 @@
   animation: smoky 2s both;
 }
 
+.bienvenue,
+.surmon,
+.portfolio {
+  display: flex;
+}
 .smokey-letter:nth-child(even) {
   animation-name: smoky-mirror;
 }
 
-.letter:nth-child(1) {
+@media screen and (max-width: 920px) {
+  .title-accueil {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .title-accueil {
+    font-size: 1.7rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    top: 15%;
+  }
+}
+
+.bienvenue .letter:nth-child(1) {
   animation-delay: 0.1s;
 }
-.letter:nth-child(2) {
+.bienvenue .letter:nth-child(2) {
   animation-delay: 0.2s;
 }
-.letter:nth-child(3) {
+.bienvenue .letter:nth-child(3) {
   animation-delay: 0.3s;
 }
-.letter:nth-child(4) {
+.bienvenue .letter:nth-child(4) {
   animation-delay: 0.4s;
 }
-.letter:nth-child(5) {
+.bienvenue .letter:nth-child(5) {
   animation-delay: 0.5s;
 }
-.letter:nth-child(6) {
+.bienvenue .letter:nth-child(6) {
   animation-delay: 0.6s;
 }
-.letter:nth-child(7) {
+.bienvenue .letter:nth-child(7) {
   animation-delay: 0.7s;
 }
-.letter:nth-child(8) {
+.bienvenue .letter:nth-child(8) {
   animation-delay: 0.8s;
 }
-.letter:nth-child(9) {
+.bienvenue .letter:nth-child(9) {
   animation-delay: 0.9s;
 }
-.letter:nth-child(10) {
+.surmon .letter:nth-child(1) {
   animation-delay: 1s;
 }
-.letter:nth-child(11) {
+.surmon .letter:nth-child(2) {
   animation-delay: 1.1s;
 }
-.letter:nth-child(12) {
+.surmon .letter:nth-child(3) {
   animation-delay: 1.2s;
 }
-.letter:nth-child(13) {
+.surmon .letter:nth-child(4) {
   animation-delay: 1.3s;
 }
-.letter:nth-child(14) {
+.surmon .letter:nth-child(5) {
   animation-delay: 1.4s;
 }
-.letter:nth-child(15) {
+.surmon .letter:nth-child(6) {
   animation-delay: 1.5s;
 }
-.letter:nth-child(16) {
+.portfolio .letter:nth-child(1) {
   animation-delay: 1.6s;
 }
-.letter:nth-child(17) {
+.portfolio .letter:nth-child(2) {
   animation-delay: 1.7s;
 }
-.letter:nth-child(18) {
+.portfolio .letter:nth-child(3) {
   animation-delay: 1.8s;
 }
-.letter:nth-child(19) {
+.portfolio .letter:nth-child(4) {
   animation-delay: 1.9s;
 }
-.letter:nth-child(20) {
+.portfolio .letter:nth-child(5) {
   animation-delay: 2s;
 }
-.letter:nth-child(21) {
+.portfolio .letter:nth-child(6) {
   animation-delay: 2.1s;
 }
-.letter:nth-child(22) {
+.portfolio .letter:nth-child(7) {
   animation-delay: 2.2s;
 }
-.letter:nth-child(23) {
+.portfolio .letter:nth-child(8) {
   animation-delay: 2.3s;
 }
-.letter:nth-child(24) {
+.portfolio .letter:nth-child(9) {
   animation-delay: 2.4s;
 }

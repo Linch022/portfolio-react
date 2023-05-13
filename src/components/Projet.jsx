@@ -34,7 +34,6 @@ const Projet = () => {
       setClassName('display-middle');
     }
   }, [location, destination]);
-  console.log(location);
   return (
     <div>
       <h2 className={`${className}-projet-title projet-title`}>mes projets</h2>
@@ -129,7 +128,7 @@ const Projet = () => {
               <p>
                 Création d'un site qui répertorie les concerts dans le monde
               </p>
-              <p>Projet lors d'un Hackaton</p>
+              <p>Projet Hackaton</p>
               <p>Avril 2023</p>
             </div>
           </div>

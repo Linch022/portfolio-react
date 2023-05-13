@@ -2,7 +2,8 @@
   position: relative;
   display: flex;
   justify-content: center;
-  animation: leave-left 1.5s ease-in-out;
+  animation: leave-left 1s ease-in-out;
+  animation-delay: 0.9s;
   animation-fill-mode: forwards;
 }
 .display-middle-auto-text-container {
@@ -17,7 +18,7 @@
   position: relative;
   display: flex;
   justify-content: center;
-  animation: incoming-left 1.5s ease-in-out;
+  animation: incoming-left 0.5s ease-in-out;
   animation-fill-mode: forwards;
 }
 
@@ -59,6 +60,7 @@
 
 .display-middle-presentation-container {
   opacity: 0;
+  height: 95%;
   width: 600px;
   margin: 0 50px 0 50px;
   animation: display-middle 4.5s ease-in-out;
@@ -69,6 +71,7 @@
 .display-middle-home-project-container {
   opacity: 0;
   width: 600px;
+  height: 95%;
   margin: 0 50px 0 50px;
   animation: display-middle 5s ease-in-out;
   animation-fill-mode: forwards;
@@ -78,8 +81,9 @@
 .leave-left-presentation-container {
   opacity: 1;
   width: 600px;
+  height: 95%;
   margin: 0 50px 0 50px;
-  animation: leave-left 1s ease-in-out;
+  animation: leave-left 0.5s ease-in-out;
   animation-fill-mode: forwards;
   position: relative;
 }
@@ -87,8 +91,9 @@
 .leave-left-home-project-container {
   opacity: 1;
   width: 600px;
+  height: 95%;
   margin: 0 50px 0 50px;
-  animation: leave-left 1s ease-in-out;
+  animation: leave-left 0.5s ease-in-out;
   animation-fill-mode: forwards;
   animation-delay: 0.3s;
   position: relative;
@@ -97,8 +102,9 @@
 .incoming-left-presentation-container {
   opacity: 0;
   width: 600px;
+  height: 95%;
   margin: 0 50px 0 50px;
-  animation: incoming-left 1s ease-in-out;
+  animation: incoming-left 0.5s ease-in-out;
   animation-fill-mode: forwards;
   animation-delay: 0.3s;
   position: relative;
@@ -107,8 +113,9 @@
 .incoming-left-home-project-container {
   opacity: 0;
   width: 600px;
+  height: 95%;
   margin: 0 50px 0 50px;
-  animation: incoming-left 1s ease-in-out;
+  animation: incoming-left 0.5s ease-in-out;
   animation-fill-mode: forwards;
   position: relative;
 }
@@ -169,8 +176,18 @@
     font-size: clamp(0.8rem, 2vw, 2rem);
   }
 }
-@media screen and (max-width: 675px) {
-}
 
 @media screen and (max-width: 500px) {
+  .text {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 750px) {
+  .home-container {
+    padding-top: 100px;
+  }
+  .homepage-content {
+    top: 35vh;
+    height: 65vh;
+  }
 }

@@ -80,5 +80,69 @@
 .navbar-item:hover::after {
   transform: translateX(-50%) scaleX(1);
 }
+
 @media screen and (max-width: 750px) {
+}
+
+.menu-responsive-container {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+}
+.menu-open {
+  z-index: 1000000;
+}
+#menu {
+  display: none;
+  z-index: 1;
+}
+.menu-icon {
+  width: 50px;
+  margin: 15px;
+}
+.menu-responsive-container label {
+  position: absolute;
+  z-index: 1000001;
+  right: 0;
+}
+.navlink-container {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  transition: 0.4s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.navbar-responsive-item {
+  font-size: 1.5rem;
+  position: relative;
+}
+
+.navbar-selected::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 15%;
+  width: 100%;
+  height: 3px;
+  background-color: var(--text-color);
+  box-shadow: 0 0px 20px 2px var(--textshadow-color);
+}
+.navbar-responsive-item:hover {
+  cursor: pointer;
+}
+.social-navbar-responsive {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  bottom: 10%;
+  width: 100%;
+  justify-content: center;
+}
+.navbar-responsive-social-item {
+  font-size: 2rem;
+  margin: 20px;
 }

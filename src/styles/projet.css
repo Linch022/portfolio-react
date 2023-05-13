@@ -160,22 +160,26 @@
 }
 
 .leave-left-projet-title {
-  animation: leave-left 1.5s ease-in-out;
+  animation: leave-left 1s ease-in-out;
+  animation-delay: 1.3s;
   animation-fill-mode: forwards;
 }
 
 .incoming-left-projet-title {
-  animation: incoming-left 1.5s ease-in-out;
+  opacity: 0;
+  animation: incoming-left 0.5s ease-in-out;
   animation-fill-mode: forwards;
 }
 
 .leave-right-projet-title {
-  animation: leave-right 1.5s ease-in-out;
+  animation: leave-right 1s ease-in-out;
+  animation-delay: 1.3s;
   animation-fill-mode: forwards;
 }
 
 .incoming-right-projet-title {
-  animation: incoming-right 1.5s ease-in-out;
+  opacity: 0;
+  animation: incoming-right 0.5s ease-in-out;
   animation-fill-mode: forwards;
 }
 
@@ -262,12 +266,21 @@
     font-size: clamp(1.5rem, 5vw, 2.5rem);
   }
 }
+@media screen and (max-width: 750px) {
+  .projet-title {
+    padding-top: 100px;
+  }
+  .projet-container {
+    padding-top: 150px;
+  }
+}
 @media screen and (max-width: 450px) {
   .projet-container {
-    padding: 0 0 50px 0;
+    padding: 100px 0 50px 0;
+    overflow-x: hidden;
   }
   .projet {
-    width: 95%;
+    width: 70%;
     margin: auto;
   }
 }

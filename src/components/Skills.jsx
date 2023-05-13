@@ -41,11 +41,11 @@ const Skills = () => {
 
   return (
     <main className='skills-page'>
-      {showContent ? (
-        <>
-          <h2 className={`${className}-skills-title skills-title`}>
-            Mes compétences
-          </h2>
+      <>
+        <h2 className={`${className}-skills-title skills-title`}>
+          Mes compétences
+        </h2>
+        {showContent ? (
           <div className={`${className}-skills-container skills-container`}>
             <img
               src={htmlLogo}
@@ -88,8 +88,8 @@ const Skills = () => {
               className={`${className}-skills-logo skills-logo`}
             />
           </div>
-        </>
-      ) : null}
+        ) : null}
+      </>
     </main>
   );
 };
