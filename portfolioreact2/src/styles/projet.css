@@ -1,0 +1,273 @@
+.projet-container {
+  overflow: hidden;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
+  justify-content: center;
+  grid-gap: 100px;
+  overflow: scroll;
+  height: 81vh;
+  z-index: 10000;
+  position: absolute;
+  top: 19vh;
+  left: 0;
+  padding: 0 50px 5vh 50px;
+}
+
+.leave-left-projet-container .projet:nth-child(1) {
+  opacity: 1;
+  animation: leave-left 0.5s ease-in-out;
+  animation-fill-mode: forwards;
+}
+.leave-left-projet-container .projet:nth-child(2) {
+  opacity: 1;
+  animation: leave-left 0.5s ease-in-out;
+  animation-delay: 0.2s;
+  animation-fill-mode: forwards;
+}
+.leave-left-projet-container .projet:nth-child(3) {
+  opacity: 1;
+  animation: leave-left 0.5s ease-in-out;
+  animation-delay: 0.4s;
+  animation-fill-mode: forwards;
+}
+.leave-left-projet-container .projet:nth-child(4) {
+  opacity: 1;
+  animation: leave-left 0.5s ease-in-out;
+  animation-delay: 0.6s;
+  animation-fill-mode: forwards;
+}
+.leave-left-projet-container .projet:nth-child(5) {
+  opacity: 1;
+  animation: leave-left 0.5s ease-in-out;
+  animation-delay: 0.8s;
+  animation-fill-mode: forwards;
+}
+.incoming-left-projet-container .projet:nth-child(5) {
+  opacity: 0;
+  animation: incoming-left 0.5s ease-in-out;
+  animation-fill-mode: forwards;
+}
+.incoming-left-projet-container .projet:nth-child(4) {
+  opacity: 0;
+  animation: incoming-left 0.5s ease-in-out;
+  animation-delay: 0.2s;
+  animation-fill-mode: forwards;
+}
+.incoming-left-projet-container .projet:nth-child(3) {
+  opacity: 0;
+  animation: incoming-left 0.5s ease-in-out;
+  animation-delay: 0.4s;
+  animation-fill-mode: forwards;
+}
+.incoming-left-projet-container .projet:nth-child(2) {
+  opacity: 0;
+  animation: incoming-left 0.5s ease-in-out;
+  animation-delay: 0.6s;
+  animation-fill-mode: forwards;
+}
+.incoming-left-projet-container .projet:nth-child(1) {
+  opacity: 0;
+  animation: incoming-left 0.5s ease-in-out;
+  animation-delay: 0.8s;
+  animation-fill-mode: forwards;
+}
+
+.leave-right-projet-container .projet:nth-child(5) {
+  opacity: 1;
+  animation: leave-right 0.5s ease-in-out;
+  animation-fill-mode: forwards;
+}
+.leave-right-projet-container .projet:nth-child(4) {
+  opacity: 1;
+  animation: leave-right 0.5s ease-in-out;
+  animation-delay: 0.2s;
+  animation-fill-mode: forwards;
+}
+.leave-right-projet-container .projet:nth-child(3) {
+  opacity: 1;
+  animation: leave-right 0.5s ease-in-out;
+  animation-delay: 0.4s;
+  animation-fill-mode: forwards;
+}
+.leave-right-projet-container .projet:nth-child(2) {
+  opacity: 1;
+  animation: leave-right 0.5s ease-in-out;
+  animation-delay: 0.6s;
+  animation-fill-mode: forwards;
+}
+.leave-right-projet-container .projet:nth-child(1) {
+  opacity: 1;
+  animation: leave-right 0.5s ease-in-out;
+  animation-delay: 0.8s;
+  animation-fill-mode: forwards;
+}
+
+.incoming-right-projet-container .projet:nth-child(1) {
+  opacity: 0;
+  animation: incoming-right 0.5s ease-in-out;
+  animation-fill-mode: forwards;
+}
+.incoming-right-projet-container .projet:nth-child(2) {
+  opacity: 0;
+  animation: incoming-right 0.5s ease-in-out;
+  animation-delay: 0.2s;
+  animation-fill-mode: forwards;
+}
+.incoming-right-projet-container .projet:nth-child(3) {
+  opacity: 0;
+  animation: incoming-right 0.5s ease-in-out;
+  animation-delay: 0.4s;
+  animation-fill-mode: forwards;
+}
+
+.incoming-right-projet-container .projet:nth-child(4) {
+  opacity: 0;
+  animation: incoming-right 0.5s ease-in-out;
+  animation-delay: 0.6s;
+  animation-fill-mode: forwards;
+}
+.incoming-right-projet-container .projet:nth-child(5) {
+  opacity: 0;
+  animation: incoming-right 0.5s ease-in-out;
+  animation-delay: 0.8s;
+  animation-fill-mode: forwards;
+}
+
+.display-middle-projet-container {
+  opacity: 0;
+  animation: display-middle 1.5s ease-in-out;
+  animation-delay: 0.2s;
+  animation-fill-mode: forwards;
+}
+
+.projet-play-logo {
+  margin-top: 20px;
+  width: 100px;
+  margin: 0 auto 0 auto;
+  animation: neon-anim 3s alternate infinite;
+}
+
+.projet-play-logo-disabled {
+  width: 100px;
+  margin: 0 auto 0 auto;
+  opacity: 40%;
+}
+
+.projet-title {
+  text-align: center;
+  font-size: 2.3rem;
+}
+
+.leave-left-projet-title {
+  animation: leave-left 1.5s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.incoming-left-projet-title {
+  animation: incoming-left 1.5s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.leave-right-projet-title {
+  animation: leave-right 1.5s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.incoming-right-projet-title {
+  animation: incoming-right 1.5s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.display-middle-projet-title {
+  opacity: 0;
+  text-align: center;
+  font-size: 2.3rem;
+  animation: display-middle 1.5s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.projet {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projet-content {
+  z-index: 1;
+  margin: 20px 0 20px 0;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-family: var(--font3);
+  font-size: 1.5rem;
+}
+
+.projet-box5 {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  z-index: 0;
+  background: linear-gradient(
+    135deg,
+    transparent 0%,
+    rgb(38 39 46 / 50%) 20%,
+    rgb(41 42 49 / 35%) 70%,
+    transparent 100%
+  );
+  border-radius: 10px;
+}
+.projet-box5::after {
+  content: '';
+  border-radius: 10px;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(
+    135deg,
+    rgb(117 27 180 / 75%) 0%,
+    rgb(68 22 200) 100%
+  );
+  mask: linear-gradient(
+      to left,
+      transparent calc(100% - 10px),
+      #fff calc(100% - 3px + 1px)
+    ),
+    linear-gradient(
+      to right,
+      transparent calc(100% - 10px),
+      #fff calc(100% - 3px + 1px)
+    ),
+    linear-gradient(
+      to bottom,
+      transparent calc(100% - 10px),
+      #fff calc(100% - 3px + 1px)
+    ),
+    linear-gradient(
+      to top,
+      transparent calc(100% - 10px),
+      #fff calc(100% - 3px + 1px)
+    );
+  background-origin: border-box;
+  background-clip: content-box;
+}
+@media screen and (max-width: 900px) {
+  .projet-title {
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
+  }
+}
+@media screen and (max-width: 450px) {
+  .projet-container {
+    padding: 0 0 50px 0;
+  }
+  .projet {
+    width: 95%;
+    margin: auto;
+  }
+}

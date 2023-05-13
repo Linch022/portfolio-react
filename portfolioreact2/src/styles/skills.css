@@ -1,0 +1,161 @@
+.skills-page {
+  display: flex;
+  flex-direction: column;
+}
+
+.skills-title {
+  text-align: center;
+  font-size: 2.3rem;
+}
+
+.skills-logo {
+  width: 10%;
+  margin: 4%;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  padding-top: 100px;
+  width: 80%;
+}
+
+.display-middle-skills-title {
+  opacity: 0;
+  animation: display-middle 1.5s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.incoming-right-skills-title {
+  opacity: 0;
+  animation: incoming-right 1.5s ease-in-out;
+  animation-delay: 0.2s;
+  animation-fill-mode: forwards;
+}
+
+.leave-right-skills-title {
+  opacity: 0;
+  animation: leave-right 1.5s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.display-middle-skills-container {
+  opacity: 0;
+  animation: display-middle 1.5s ease-in-out;
+  animation-delay: 0.2s;
+  animation-fill-mode: forwards;
+}
+
+.incoming-right-skills-container img:nth-child(1) {
+  opacity: 0;
+  animation: incoming-right 0.5s ease-in-out;
+  animation-delay: 0.2s;
+  animation-fill-mode: forwards;
+}
+
+.incoming-right-skills-container img:nth-child(2) {
+  opacity: 0;
+  animation: incoming-right 0.5s ease-in-out;
+  animation-delay: 0.3s;
+  animation-fill-mode: forwards;
+}
+.incoming-right-skills-container img:nth-child(3) {
+  opacity: 0;
+  animation: incoming-right 0.5s ease-in-out;
+  animation-delay: 0.4s;
+  animation-fill-mode: forwards;
+}
+.incoming-right-skills-container img:nth-child(4) {
+  opacity: 0;
+  animation: incoming-right 0.5s ease-in-out;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+.incoming-right-skills-container img:nth-child(5) {
+  opacity: 0;
+  animation: incoming-right 0.5s ease-in-out;
+  animation-delay: 0.6s;
+  animation-fill-mode: forwards;
+}
+.incoming-right-skills-container img:nth-child(6) {
+  opacity: 0;
+  animation: incoming-right 0.5s ease-in-out;
+  animation-delay: 0.7s;
+  animation-fill-mode: forwards;
+}
+.incoming-right-skills-container img:nth-child(7) {
+  opacity: 0;
+  animation: incoming-right 0.5s ease-in-out;
+  animation-delay: 0.8s;
+  animation-fill-mode: forwards;
+}
+.incoming-right-skills-container img:nth-child(8) {
+  opacity: 0;
+  animation: incoming-right 0.5s ease-in-out;
+  animation-delay: 0.9s;
+  animation-fill-mode: forwards;
+}
+
+.leave-right-skills-container img:nth-child(8) {
+  animation: leave-right 0.5s ease-in-out;
+  animation-delay: 0.2s;
+  animation-fill-mode: forwards;
+}
+
+.leave-right-skills-container img:nth-child(7) {
+  animation: leave-right 0.5s ease-in-out;
+  animation-delay: 0.3s;
+  animation-fill-mode: forwards;
+}
+.leave-right-skills-container img:nth-child(6) {
+  animation: leave-right 0.5s ease-in-out;
+  animation-delay: 0.4s;
+  animation-fill-mode: forwards;
+}
+.leave-right-skills-container img:nth-child(5) {
+  animation: leave-right 0.5s ease-in-out;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+.leave-right-skills-container img:nth-child(4) {
+  animation: leave-right 0.5s ease-in-out;
+  animation-delay: 0.6s;
+  animation-fill-mode: forwards;
+}
+.leave-right-skills-container img:nth-child(3) {
+  animation: leave-right 0.5s ease-in-out;
+  animation-delay: 0.7s;
+  animation-fill-mode: forwards;
+}
+.leave-right-skills-container img:nth-child(2) {
+  animation: leave-right 0.5s ease-in-out;
+  animation-delay: 0.8s;
+  animation-fill-mode: forwards;
+}
+.leave-right-skills-container img:nth-child(1) {
+  animation: leave-right 0.5s ease-in-out;
+  animation-delay: 0.9s;
+  animation-fill-mode: forwards;
+}
+
+@media screen and (max-width: 900px) {
+  .skills-title {
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .skills-logo {
+    width: 20%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .skills-title {
+    padding-top: 100px;
+  }
+  .skills-container {
+    padding-top: 150px;
+  }
+}

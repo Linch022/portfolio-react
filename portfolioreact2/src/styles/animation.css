@@ -1,0 +1,479 @@
+@keyframes neon-anim {
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+    opacity: 1;
+  }
+
+  20%,
+  24%,
+  55% {
+    opacity: 0.1;
+  }
+}
+
+@keyframes display-middle {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes auto-text {
+  10% {
+    content: '';
+  }
+  10.5% {
+    content: 'd';
+  }
+  11% {
+    content: 'dé';
+  }
+  11.5% {
+    content: 'dév';
+  }
+  12% {
+    content: 'déve';
+  }
+  12.5% {
+    content: 'dével';
+  }
+  13% {
+    content: 'dévelo';
+  }
+  13.5% {
+    content: 'dévelop';
+  }
+  14% {
+    content: 'développ';
+  }
+  14.5% {
+    content: 'développe';
+  }
+  15% {
+    content: 'développeu';
+  }
+  15.5% {
+    content: 'développeur';
+  }
+  16% {
+    content: 'développeur ';
+  }
+  16.5% {
+    content: 'développeur w';
+  }
+  17% {
+    content: 'développeur we';
+  }
+  17.5% {
+    content: 'développeur web';
+  }
+  18% {
+    content: 'développeur web \A ';
+  }
+  18.5% {
+    content: 'développeur web \A j';
+  }
+  19% {
+    content: 'développeur web \A ja';
+  }
+  19.5% {
+    content: 'développeur web \A jav';
+  }
+  20% {
+    content: 'développeur web \A java';
+  }
+  20.5% {
+    content: 'développeur web \A javas';
+  }
+  21% {
+    content: 'développeur web \A javasc';
+  }
+  21.5% {
+    content: 'développeur web \A javascr';
+  }
+  22% {
+    content: 'développeur web \A javascri';
+  }
+  22.5% {
+    content: 'développeur web \A javascrip';
+  }
+  23% {
+    content: 'développeur web \A javascript';
+  }
+  23.5% {
+    content: 'développeur web \A javascript ';
+  }
+  24% {
+    content: 'développeur web \A javascript r';
+  }
+  24.5% {
+    content: 'développeur web \A javascript re';
+  }
+  25% {
+    content: 'développeur web \A javascript rea';
+  }
+  25.5% {
+    content: 'développeur web \A javascript reac';
+  }
+  26% {
+    content: 'développeur web \A javascript react';
+  }
+  69.9% {
+    content: 'développeur web \A javascript react';
+  }
+  70% {
+    content: 'développeur web \A javascript reac';
+  }
+  70.5% {
+    content: 'développeur web \A javascript rea';
+  }
+  71% {
+    content: 'développeur web \A javascript re';
+  }
+  71.5% {
+    content: 'développeur web \A javascript r';
+  }
+  72% {
+    content: 'développeur web \A javascript ';
+  }
+  72.5% {
+    content: 'développeur web \A javascript';
+  }
+  73% {
+    content: 'développeur web \A javascrip';
+  }
+  73.5% {
+    content: 'développeur web \A javascri';
+  }
+  74% {
+    content: 'développeur web \A javascr';
+  }
+  74.5% {
+    content: 'développeur web \A javasc';
+  }
+  75% {
+    content: 'développeur web \A javas';
+  }
+  75.5% {
+    content: 'développeur web \A java';
+  }
+  76% {
+    content: 'développeur web \A jav';
+  }
+  76.5% {
+    content: 'développeur web \A ja';
+  }
+  77% {
+    content: 'développeur web \A j';
+  }
+  77.5% {
+    content: 'développeur web \A ';
+  }
+  78% {
+    content: 'développeur web';
+  }
+  78.5% {
+    content: 'développeur we';
+  }
+  79% {
+    content: 'développeur w';
+  }
+  79.5% {
+    content: 'développeur ';
+  }
+  80% {
+    content: 'développeur';
+  }
+  80.5% {
+    content: 'développeu';
+  }
+  81% {
+    content: 'développe';
+  }
+  81.5% {
+    content: 'développ';
+  }
+  82% {
+    content: 'dévelop';
+  }
+  82.5% {
+    content: 'dévelo';
+  }
+  83% {
+    content: 'dével';
+  }
+  83.5% {
+    content: 'déve';
+  }
+  84% {
+    content: 'dév';
+  }
+  84.5% {
+    content: 'dé';
+  }
+  85% {
+    content: 'd';
+  }
+  85.5% {
+    content: '';
+  }
+  100% {
+    animation-delay: 0;
+  }
+}
+
+@keyframes leave-left {
+  0% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    transform: translateX(-1500px);
+  }
+}
+
+@keyframes leave-right {
+  0% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    transform: translateX(1500px);
+  }
+}
+
+@keyframes incoming-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-1500px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes incoming-right {
+  0% {
+    opacity: 0;
+    transform: translateX(1500px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes navbar-fall {
+  0% {
+    transform: translateY(-80px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateZ(0deg) scale(1);
+  }
+  25% {
+    transform: rotateZ(90deg) scale(2);
+  }
+  50% {
+    transform: rotateZ(180deg) scale(1);
+  }
+  75% {
+    transform: rotateZ(270deg) scale(2);
+  }
+  100% {
+    transform: rotateZ(360deg) scale(1);
+  }
+}
+
+@keyframes blink-star {
+  0%,
+  10%,
+  20%,
+  50%,
+  60%,
+  90%,
+  100% {
+    opacity: 1;
+  }
+  15%,
+  30%,
+  55%,
+  70%,
+  95% {
+    opacity: 0;
+  }
+}
+
+@keyframes faulty-flicker {
+  0% {
+    opacity: 0.1;
+  }
+  2% {
+    opacity: 0.1;
+  }
+  4% {
+    opacity: 0.5;
+  }
+  19% {
+    opacity: 0.5;
+  }
+  21% {
+    opacity: 0.1;
+  }
+  23% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.5;
+  }
+  83% {
+    opacity: 0.4;
+  }
+
+  87% {
+    opacity: 1;
+  }
+}
+
+@keyframes text-flicker {
+  0% {
+    opacity: 0.1;
+  }
+
+  2% {
+    opacity: 1;
+  }
+
+  8% {
+    opacity: 0.1;
+  }
+
+  9% {
+    opacity: 1;
+  }
+
+  12% {
+    opacity: 0.1;
+  }
+  20% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.3;
+  }
+  30% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 0.7;
+  }
+  72% {
+    opacity: 0.2;
+  }
+
+  77% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0.9;
+  }
+}
+
+@keyframes display-button {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  81% {
+    opacity: 1;
+  }
+  90.5% {
+    opacity: 0;
+  }
+  91% {
+    opacity: 1;
+  }
+  93% {
+    opacity: 0.1;
+  }
+  95% {
+    opacity: 1;
+  }
+  97% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes hide-button {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes letter-coming {
+  0% {
+    transform: rotateY(0) translateY(-200px) translateX(300px) skewX(70deg);
+    opacity: 0;
+  }
+  to {
+    transform: rotateY(0) translateY(0) translateX(0) skewX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes smoky {
+  20% {
+    text-shadow: 0 0 40px var(--text-color), 0 0 10px var(--textshadow-color),
+      0px 0px 10px var(--textshadow-color);
+  }
+  to {
+    transform: translate3d(15rem, -8rem, 0) rotate(-40deg) skewX(70deg)
+      scale(1.5);
+    text-shadow: 0 0 20px var(--text-color), 0 0 10px var(--textshadow-color),
+      0px 0px 10px var(--textshadow-color);
+    opacity: 0;
+  }
+}
+
+@keyframes smoky-mirror {
+  20% {
+    text-shadow: 0 0 40px var(--text-color), 0 0 10px var(--textshadow-color),
+      0px 0px 10px var(--textshadow-color);
+  }
+  to {
+    transform: translate3d(18rem, -8rem, 0) rotate(-40deg) skewX(-70deg)
+      scale(2);
+    text-shadow: 0 0 20px var(--text-color), 0 0 10px var(--textshadow-color),
+      0px 0px 10px var(--textshadow-color);
+    opacity: 0;
+  }
+}
